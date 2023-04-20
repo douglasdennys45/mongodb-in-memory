@@ -149,6 +149,9 @@ func detectLinuxId() (string, error) {
 	}
 	switch id {
 	case "ubuntu":
+		if version >= 22 {
+			return "ubuntu2204", nil
+		}
 		if version >= 20 {
 			return "ubuntu2004", nil
 		}
