@@ -91,7 +91,8 @@ func (spec *DownloadSpec) GetDownloadURL() (string, error) {
 	}
 
 	return fmt.Sprintf(
-		"https://fastdl.mongodb.org/%s/%s-%s.tgz",
+		"https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-6.0.4.tgz"
+		//"https://fastdl.mongodb.org/%s/%s-%s.tgz",
 		spec.Platform,
 		archiveName,
 		spec.Version(),
