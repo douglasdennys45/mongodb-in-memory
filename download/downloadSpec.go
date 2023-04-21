@@ -154,7 +154,7 @@ func detectLinuxId() (string, error) {
 			return "ubuntu2204", nil
 		}
 		if version >= 20 {
-			return "ubuntu2004", nil
+			return "ubuntu2204", nil
 		}
 		if version >= 18 {
 			return "ubuntu1804", nil
